@@ -41,6 +41,18 @@ int main() {
             }
         }
     }
+    
+    for(i = 0; i < count - 1; i++) {
+        for(j = i + 1; j < count; j++) {
+            if(intersection[i] > intersection[j]) {
+                int temp = intersection[i];
+                intersection[i] = intersection[j];
+                intersection[j] = temp;
+            }
+        }
+    }
+
+
 
     //----------------------------------------------------------------//
     for(i = 0; i < count; i++) {
